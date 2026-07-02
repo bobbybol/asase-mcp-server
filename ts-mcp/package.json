@@ -1,0 +1,26 @@
+{
+  "name": "one-file-mcp",
+  "version": "1.0.0",
+  "description": "A one file MCP server",
+  "homepage": "https://github.com/bobbybol/asase-mcp-server#readme",
+  "bugs": {
+    "url": "https://github.com/bobbybol/asase-mcp-server/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobbybol/asase-mcp-server.git"
+  },
+  "license": "ISC",
+  "author": "Bobby Bol",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {},
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "dotenv": "^17.4.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.0"
+  }
+}
