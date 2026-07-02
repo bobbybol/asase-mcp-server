@@ -1,4 +1,4 @@
-# ts-mcp
+# mcp-avs-ts
 
 A stdio MCP server that safely exposes NXT AVS data to Claude.
 
@@ -35,7 +35,7 @@ Each invocation fetches the complete AVS dataset. There is no caching or filteri
 ## Setup
 
 ```bash
-cd ts-mcp
+cd mcp-avs-ts
 npm install
 cp .env.example .env
 ```
@@ -65,7 +65,7 @@ claude mcp add --scope project asase-avs \
   --env CLAUDE_API_KEY=your-key \
   --env NXT_EXPLORER_API_AVS_URL=your-url \
   --env NXT_EXPLORER_API_KEY=your-token \
-  -- npx tsx ts-mcp/index.ts
+  -- npx tsx mcp-avs-ts/index.ts
 ```
 
 This writes a `.mcp.json` at the repo root. Use `--scope local` instead if you only want it on your machine.
@@ -88,7 +88,7 @@ You can also add this to `.mcp.json` at the repo root:
     "asase-avs": {
       "type": "stdio",
       "command": "npx",
-      "args": ["tsx", "ts-mcp/index.ts"],
+      "args": ["-y", "tsx", "mcp-avs-ts/index.ts"],
       "env": {
         "CLAUDE_API_KEY": "your-key",
         "NXT_EXPLORER_API_AVS_URL": "your-url",

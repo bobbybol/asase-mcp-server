@@ -1,5 +1,5 @@
 {
-  "name": "one-file-mcp",
+  "name": "mcp-open-meteo-ts",
   "version": "1.0.0",
   "description": "A one file MCP server",
   "homepage": "https://github.com/bobbybol/asase-mcp-server#readme",
@@ -17,7 +17,6 @@
   "scripts": {},
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
-    "dotenv": "^17.4.2",
     "zod": "^4.4.3"
   },
   "devDependencies": {

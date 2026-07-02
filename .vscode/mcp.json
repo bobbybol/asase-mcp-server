@@ -1,0 +1,28 @@
+{
+  "inputs": [],
+  "servers": {
+    "my-open-meteo-server": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "tsx",
+        "mcp-open-meteo-ts/index.ts"
+      ]
+    },
+    "asase-avs": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "tsx",
+        "mcp-avs-ts/index.ts"
+      ],
+      "env": {
+        "CLAUDE_API_KEY": "your-key",
+        "NXT_EXPLORER_API_AVS_URL": "your-url",
+        "NXT_EXPLORER_API_KEY": "your-token"
+      }
+    }
+  }
+}
