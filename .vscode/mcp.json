@@ -17,6 +17,20 @@
         "-c",
         "set -a && if [ -f mcp-avs-ts/.env ]; then . mcp-avs-ts/.env; fi && set +a && npx -y tsx mcp-avs-ts/index.ts"
       ]
+    },
+    "asase-nxt-users": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "build/server.js"
+      ],
+      "cwd": "${workspaceFolder}",
+      "dev": {
+        "watch": "build/**/*.js",
+        "debug": {
+          "type": "node"
+        }
+      }
     }
   }
 }

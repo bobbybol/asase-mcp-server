@@ -10,7 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/bobbybol/asase-mcp-server.git"
   },
-  "license": "ISC",
   "author": "Bobby Bol",
   "type": "module",
   "main": "index.ts",
